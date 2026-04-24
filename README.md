@@ -120,10 +120,10 @@ Functions:
   - `calibrate_miss`
   - `calibrate_hit`
   - `attack` (loop)
-- Saves states via url query parameters.
-- Posts calibration payloads to `/calibrate`.
-- Posts attack payloads to `/attack`.
-- Rotates origins and repeats indefinitely.
+- Saves states via url query parameters
+- Posts calibration payloads to `/calibrate`
+- Posts attack payloads to `/attack`
+- Rotates origins and repeats indefinitely
 
 ### Vulnerable DNS Forwarder:
 
@@ -184,7 +184,7 @@ This is the recommended safe flow to reproduce the PoC.
 ### 1. Prepare Isolated Environment
 
 - Prefer VM/sandbox
-- Ensure you have `sudo` privileges.
+- Ensure you have `sudo` privileges
 - Ensure no production-critical services depend on local DNS while testing
 
 ### 2. Clone and Install Lab
@@ -224,11 +224,7 @@ Terminal 3:
   --disable-host-cache
 ```
 
-In Chromium, browse to:
-
-```text
-[http://127.0.0.1](http://127.0.0.1)
-```
+In Chromium, browse to: [http://127.0.0.1](http://127.0.0.1)
 
 Terminal 4:
 
